@@ -1,15 +1,14 @@
 Premier League:
   # Examples: copy from https://pl.ecal.com/ (club or all-fixtures feeds)
   # Put 1..N feeds; competition classification will be forced to "Premier League"
-  - webcal://<your-premier-league-feed-1>.ics
-  - webcal://<your-premier-league-feed-2>.ics
+  webcal://iphone.schedjoules.com/calendars/fbd1a4a9a54a?l=en&x=e0b91c&utm_campaign=search&u=07CC6599-5904-46C1-B7B6-C327F2ED322A&sid=fd37794a0401103ef3f46bcb6cba93b9
 
 La Liga:
   # Examples: copy from LaLiga’s ECAL-powered pages
-  - webcal://<your-laliga-feed-1>.ics
+  - webcal://iphone.schedjoules.com/calendars/b862ca52487b?l=en&x=e0b91c&utm_campaign=search&u=07CC6599-5904-46C1-B7B6-C327F2ED322A&sid=fd37794a0401103ef3f46bcb6cba93b9
 
 Champions League:
   # UEFA does not always expose a single public ICS for “all fixtures”.
   # If needed, add trustworthy third-party ICS you are comfortable with.
   # You can also add per-team UCL feeds here.
-  - webcal://<your-ucl-feed-1>.ics
+  - webcal://iphone.schedjoules.com/calendars/38d03da3a348?l=en&x=e0b91c&utm_campaign=home&u=07CC6599-5904-46C1-B7B6-C327F2ED322A&sid=fd37794a0401103ef3f46bcb6cba93b9
