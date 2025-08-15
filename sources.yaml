@@ -1,0 +1,15 @@
+Premier League:
+  # Examples: copy from https://pl.ecal.com/ (club or all-fixtures feeds)
+  # Put 1..N feeds; competition classification will be forced to "Premier League"
+  - webcal://<your-premier-league-feed-1>.ics
+  - webcal://<your-premier-league-feed-2>.ics
+
+La Liga:
+  # Examples: copy from LaLiga’s ECAL-powered pages
+  - webcal://<your-laliga-feed-1>.ics
+
+Champions League:
+  # UEFA does not always expose a single public ICS for “all fixtures”.
+  # If needed, add trustworthy third-party ICS you are comfortable with.
+  # You can also add per-team UCL feeds here.
+  - webcal://<your-ucl-feed-1>.ics
