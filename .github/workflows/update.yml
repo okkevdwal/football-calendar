@@ -1,0 +1,32 @@
+name: Build Big Matches Calendar
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # daily at 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Build ICS
+        run: python build_calendar.py
+
+      - name: Commit updated ICS
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update big_matches.ics"
+          file_pattern: big_matches.ics
